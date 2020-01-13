@@ -18,6 +18,7 @@
         <mat-card-content class="dashboard-card-content">
 <!--          <div>Card Content Here</div>-->
           <app-table-widget *ngIf="card.title.endsWith('Table')"></app-table-widget>
+          <app-graph-widget *ngIf="card.type.endsWith('graph')"></app-graph-widget>
         </mat-card-content>
       </mat-card>
     </mat-grid-tile>

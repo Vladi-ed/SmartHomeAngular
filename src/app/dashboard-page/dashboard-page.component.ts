@@ -27,14 +27,14 @@ export class DashboardPageComponent {
       }
       if (breakpoints[Breakpoints.Small] || breakpoints[Breakpoints.Medium]) {
         return [
-          new Widget('Graph 1', 2, 1),
+          new Widget('Graph 1', 2, 1, 'graph'),
           new Widget('Graph 2', 2, 1),
           new Widget('Table', 4, 2),
         ];
       }
 
       return [
-        new Widget('Graph 1', 1, 1),
+        new Widget('Graph 1', 1, 1, 'graph'),
         new Widget('Graph 2', 1, 1),
         new Widget('Graph 3', 1, 1),
         new Widget('Graph 4', 1, 1),
